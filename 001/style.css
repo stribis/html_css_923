@@ -1,0 +1,21 @@
+/* Small Reset */
+*::before, *::after, * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+#main-nav {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+  ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    li > a {
+      text-transform: uppercase;
+    }
+  }
+}
