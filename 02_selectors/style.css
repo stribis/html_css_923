@@ -1,0 +1,60 @@
+
+/* Small Reset */
+*::before, *::after, * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  font-family: sans-serif;
+}
+
+.popcorn {
+  background: black;
+  color: white;
+  font-family: monospace;
+}
+
+nav > menu {
+  background: hotpink;
+}
+
+nav a {
+  color: red;
+}
+
+li:first-of-type a {
+  font-family: sans-serif;
+}
+
+nav a:hover {
+  color: yellow;
+}
+
+h1 + span {
+  color: rgb(149, 27, 149);
+}
+
+h1 ~ span {
+  text-decoration: underline;
+}
+
+section > p::first-line {
+  color: orangered;
+}
+
+section > p::first-letter {
+  font-size: 4rem;
+}
+
+h2 {
+  position: relative;
+}
+
+h2::after {
+  content: "😀";
+  position: absolute;
+  top: 0;
+  left: 150px;
+}
