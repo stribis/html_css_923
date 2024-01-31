@@ -16,10 +16,11 @@
       green 60% 80%, 
       blue 80%);
     } */
-
-    .colombia {
+    .flag {
       width: 400px;
       height: 300px;
+    }
+    .colombia {
       background-image: linear-gradient(
         to bottom, 
       yellow 50%, 
@@ -28,12 +29,65 @@
       );
     }
 
-    .italy{}
+    .italy {
+      background: linear-gradient(to right,green 33.3%, white 33.3% 66.6%, red 66.6%);
+    }
+
+    .tanzania {
+      background: linear-gradient(to right bottom, limegreen 30%, yellow 30% 35%, black 35% 65%, yellow 65% 70%, blue 70%);
+    }
+
+    .murica {
+      background: repeating-linear-gradient(red 0 7.69%, white 7.69% 15.38%);
+      position: relative;
+    }
+
+    .murica::before {
+      position: absolute;
+      content: '';
+      width: 200px;
+      height: 200px;
+      background: blue;
+      top: 0;
+      left: 0;
+    }
+
+    .schweiz {
+      position: relative;
+      width: 200px;
+      height: 200px;
+      background: red;
+    }
+
+    .schweiz::before {
+      content: '';
+      position: absolute;
+      background: white;
+      height: 170px;
+      width: 50px;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    .schweiz::after {
+      content: '';
+      position: absolute;
+      background: white;
+      width: 170px;
+      height: 50px;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
 
   </style>
 </head>
 <body>
-  <div class="colombia"></div>
-  <div class="italy"></div>
+  <div class="flag colombia"></div>
+  <div class="flag italy"></div>
+  <div class="flag tanzania"></div>
+  <div class="murica flag"></div>
+  <div class="schweiz"></div>
 </body>
 </html>
