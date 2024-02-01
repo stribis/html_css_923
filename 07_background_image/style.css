@@ -1,0 +1,16 @@
+/* Small Reset */
+*::before, *::after, * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.image-stack {
+  width: 500px;
+  height: 500px;
+  border: solid 1px red;
+  background: url('https://placekitten.com/500/500');
+  /* background-repeat: no-repeat; */
+  /* background-size: 200px; */
+  /* background-position: center center; */
+}
