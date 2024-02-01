@@ -6,11 +6,21 @@
 }
 
 .image-stack {
+  margin: 6rem;
   width: 500px;
   height: 500px;
-  border: solid 1px red;
+  border: solid 1px #222;
+  padding: 2rem;
   background: url('https://placekitten.com/500/500');
   /* background-repeat: no-repeat; */
   /* background-size: 200px; */
   /* background-position: center center; */
+  box-shadow: 
+    1rem 1rem 0 0 #222,
+    2rem 2rem 0 0 #fff,
+    3rem 3rem 0 0 #222,
+    4rem 4rem 0 0 #fff,
+    5rem 5rem 0 0 #222,
+    6rem 6rem 0 0 #fff;
+    
 }
