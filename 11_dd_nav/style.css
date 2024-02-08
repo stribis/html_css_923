@@ -1,0 +1,29 @@
+/* Small Reset */
+*::before, *::after, * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: monospace;
+}
+
+nav {
+  background: #222;
+}
+
+nav menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav menu li {
+  padding: 2rem;
+}
+
+nav a {
+  color: #eee;
+  text-decoration: none;
+}

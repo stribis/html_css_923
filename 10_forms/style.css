@@ -1,0 +1,55 @@
+/* Small Reset */
+*::before, *::after, * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: linear-gradient(teal, skyblue);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: sans-serif;
+}
+
+form {
+  width: 600px;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  background: #fff;
+  padding: 4rem;
+  /* gap: 1rem; */
+  border-radius: 1rem;
+}
+
+form label, form input {
+  font-size: 1.3rem;
+}
+
+form input {
+  margin-bottom: 2rem;
+  padding: 0.8rem 0.5rem;
+}
+
+form input:focus-visible {
+  outline: red auto 1px;
+}
+
+form h2 {
+  margin: 0 0 2rem 0;
+  font-size: 1.5rem;
+}
+
+form button {
+  align-self: flex-start;
+  margin-top: 2rem;
+  padding: 0.8rem 1.2rem;
+  font-size: 1.3rem;
+  background: linear-gradient(teal, skyblue);
+  color: #fff;
+  border: none;
+  border-radius: 1rem;
+}
