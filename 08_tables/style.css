@@ -1,0 +1,51 @@
+/* Small Reset */
+*::before, *::after, * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+  background-image: linear-gradient(teal, lightblue);
+}
+
+table {
+  border-collapse: collapse;
+  margin: 2rem auto;
+  background: white;
+}
+
+.grades-table td, .grades-table th {
+  border: solid 1px black;
+  padding: 0.5rem 0.4rem;
+}
+
+.grades-table th {
+  color: white;
+  background: rgb(83, 83, 83);
+}
+
+.grades-table tr:nth-child(even) { 
+  background: rgb(133, 133, 133);;
+}
+
+.schedule-table td, .schedule-table th {
+  border: solid 1px black;
+  padding: 0.5rem 0.4rem;
+}
+
+
+.board {
+  border: solid 1px black;
+}
+
+.board td {
+  width: 50px;
+  height: 50px;
+}
+
+.board tr:nth-child(odd) td:nth-child(even), 
+.board tr:nth-child(even) td:nth-child(odd) {
+  background: black;
+}

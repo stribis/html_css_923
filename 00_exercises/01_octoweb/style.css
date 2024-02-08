@@ -6,7 +6,12 @@
 }
 
 body {
-  font-family: Verdana, Geneva, Tahoma, sans-serif
+  font-family: 'Montserrat', Geneva, Tahoma, sans-serif
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Montserrat', Geneva, Tahoma, sans-serif;
+  font-weight: 800;
 }
 
 /* Navigation */
@@ -66,3 +71,55 @@ body {
   font-size: 3rem;
   color: #fff;
 }
+
+#about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;  
+  /* padding: 6rem 8rem; */
+}
+
+section {
+  padding: 6rem 8rem;
+}
+
+section h2 {
+  color: #3845ff;
+  font-size: 4rem;
+  margin: 4rem 0;
+}
+
+section p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+
+#team {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#team .member {
+  display: flex;
+  gap: 2rem;
+}
+
+#team .member > div p {
+  margin: 0.6rem 0;
+}
+
+.member.reverse {
+  flex-direction: row-reverse; 
+}
+
+.member-name {
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+
+.member-role {
+  font-size: 1.3rem;
+}
+
