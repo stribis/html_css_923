@@ -1,0 +1,25 @@
+
+@font-face {
+  font-family: 'Catamaran';
+  src: url('fonts/Catamaran/Catamaran-VariableFont_wght.ttf');
+}
+
+@font-face {
+  font-family: 'Lato';
+  src: url('fonts/Lato/Lato-Regular.ttf');
+}
+
+body {
+  font-family: var(--body-font-family);
+  font-weight: 400;
+}
+
+h1 {
+  font-family: var(--heading-font-family);
+  font-weight: var(--mainheading-weight);
+  font-size: var(--mainheading-size);
+}
+
+h2 {
+  font-size: var(--subheading-size);
+}

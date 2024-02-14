@@ -11,19 +11,51 @@ body {
 
 nav {
   background: #222;
+  width: 100%;
 }
 
 nav menu {
   display: flex;
   justify-content: center;
   align-items: center;
+  list-style: none;
 }
 
 nav menu li {
   padding: 2rem;
 }
 
+/* nav menu li:hover {
+  opacity: 0.8;
+} */
+
 nav a {
   color: #eee;
   text-decoration: none;
+}
+
+.trigger {
+  position: relative;
+}
+
+.dropdown {
+  /* display: none; */
+  /* visibility: hidden; */
+  /* height: 0; */
+
+  min-width: 300px;
+  position: absolute;
+  background-color: hotpink;
+  flex-direction: column;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%) scale(0);
+  transition: 0.3s;
+  transform-origin: center top;
+}
+
+.trigger:hover .dropdown {
+  /* visibility: visible; */
+  /* height: 600px; */
+  transform: translateX(-50%) scale(1);
 }
