@@ -22,4 +22,5 @@ h1 {
 
 h2 {
   font-size: var(--subheading-size);
+  font-weight: 300;
 }
