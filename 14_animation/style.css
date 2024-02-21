@@ -1,0 +1,28 @@
+
+.circle {
+  width: 150px;
+  height: 150px;
+  background: orangered;
+  border-radius: 50%;
+  animation: move-right infinite 2s;
+}
+
+.square {
+  background: red;
+  width: 100px;
+  height: 100px;
+  margin: 2rem;
+}
+
+
+@keyframes move-right {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(300px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}

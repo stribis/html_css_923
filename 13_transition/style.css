@@ -10,3 +10,36 @@
 .circle:hover {
   transform: translateX(300px);
 }
+
+.square {
+  background: red;
+  width: 100px;
+  height: 100px;
+
+  margin: 2rem;
+}
+
+.color {
+  transition: 1s background-color;
+}
+
+.color:hover {
+  background: blue;
+}
+
+.move {
+  transition: 1s;
+}
+
+.move:hover {
+  transform: translateX(300px);
+  background: yellow;
+}
+
+.rotate {
+  transition: 2s;
+}
+
+.rotate:hover {
+  transform: rotate(360deg) ;
+}
