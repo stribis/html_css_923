@@ -14,15 +14,57 @@
   margin: 2rem;
 }
 
+.color {
+  animation: changeColor 2s;
+}
+
+.move {
+  animation: move-right 2s, changeColor 2s;
+}
+
+.rotate {
+  animation: rotateRight linear infinite 2s;
+}
+
+
+@keyframes rotateRight {
+  from {
+    transform: rotate(0);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes changeColor {
+  from {
+    background-color: red;
+  }
+
+  to {
+    background-color: blue;
+  }
+}
+
+
 
 @keyframes move-right {
-  0% {
+  /* 0% {
     transform: translateX(0);
   }
   50% {
     transform: translateX(300px);
   }
   100% {
+    transform: translateX(0); 
+  }*/
+  from {
     transform: translateX(0);
   }
+
+  to {
+    transform: translateX(300px);
+  }
 }
+
