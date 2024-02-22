@@ -1,0 +1,86 @@
+
+@import url('reset.css');
+@import url('variables.css');
+@import url('typography.css');
+
+/* Small Reset */
+*::before, *::after, * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: url('../images/bg.jpeg')
+}
+
+/* Main Header */
+
+.main-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 5rem 0;
+}
+
+.main-header > span {
+  font-family: 'Raleway', sans-serif;
+  color: rgb(230, 167, 86);
+  font-weight: 800;
+  font-size: 2rem;
+} 
+
+/* Navigation */
+
+.main-navigation {
+  background-color: rgba(47, 23, 15, 0.9);
+  padding: 2rem 0;
+}
+
+.main-navigation a{
+  color: rgba(255, 255, 255, 0.7);
+  font-family: 'Raleway', sans-serif;
+  font-weight: 800;
+  font-size: 0.9rem;
+  text-decoration: none;
+} 
+
+.main-navigation a:hover{ 
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.main-navigation menu {
+  display: flex;
+  gap: 3rem;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  list-style: none;
+}
+
+/* Main Content */
+
+main {
+  position: relative;
+  display: flex;
+}
+
+.welcome-image {
+  width: 75%;
+}
+
+.welcome-image img {
+  width: 100%;
+  height: auto;
+}
+
+main .welcome-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  width: 45%;
+  position: relative;
+}
